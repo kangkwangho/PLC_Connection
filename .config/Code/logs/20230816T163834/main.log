@@ -1,0 +1,25 @@
+2023-08-16 16:38:34.413 [info] update#setState idle
+2023-08-16 16:38:39.581 [error] update#isLatestVersion(): failed to check for updates
+2023-08-16 16:38:39.581 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49312)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2023-08-16 16:39:04.417 [info] update#setState checking for updates
+2023-08-16 16:39:04.493 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49312)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2023-08-16 16:39:04.493 [info] update#setState idle
+2023-08-16 16:40:14.949 [error] update#isLatestVersion(): failed to check for updates
+2023-08-16 16:40:14.949 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49312)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2023-08-16 16:40:20.790 [info] Extension host with pid 794 exited with code: 0, signal: unknown.
+2023-08-16 16:40:20.791 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2023-08-16 16:40:20.791 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 756]: crashed with code 15 and reason 'killed'
+2023-08-16 16:41:05.566 [error] update#isLatestVersion(): failed to check for updates
+2023-08-16 16:41:05.566 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49312)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2023-08-16 16:41:10.795 [info] Extension host with pid 1119 exited with code: 0, signal: unknown.
+2023-08-16 16:41:10.797 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2023-08-16 16:41:10.797 [error] [UtilityProcess id: 3, type: fileWatcher, pid: 1106]: crashed with code 15 and reason 'killed'
+2023-08-16 17:04:39.300 [info] Extension host with pid 965 exited with code: 0, signal: unknown.

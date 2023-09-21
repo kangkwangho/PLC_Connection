@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/kangbus0109/temp.html" added="2023-07-03T23:11:10.976012Z" modified="2023-07-03T23:14:43.046503Z" visited="2023-07-03T23:11:10.976013Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2023-07-03T23:14:43.046501Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kangbus0109/microsoft.gpg" added="2023-07-03T23:15:45.666585Z" modified="2023-07-03T23:15:45.666590Z" visited="2023-07-03T23:15:45.666586Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pgp-encrypted"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2023-07-03T23:15:45.666588Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kangbus0109/test_folder/motd.legal-displayed" added="2023-08-02T04:48:43.038691Z" modified="2023-08-02T04:48:43.038697Z" visited="2023-08-02T04:48:43.038692Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2023-08-02T04:48:43.038694Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kangbus0109/test_folder/index.html" added="2023-08-02T05:57:41.445044Z" modified="2023-08-02T05:57:41.445049Z" visited="2023-08-02T05:57:41.445045Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2023-08-02T05:57:41.445047Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

@@ -1,0 +1,375 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+
+	input[type="number"]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	.live_data_box::-webkit-scrollbar {
+    display: none;
+}
+
+}
+
+@mixin afterValue {
+	position: absolute;
+	top: -3rem;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+body {
+	background-color: lightgray;
+}
+
+.modal.active {
+	opacity: 1;
+	transform: translate(-50%, -170%);
+	z-index: 1000;
+}
+
+.modal_background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	display: none;
+	transition: all 300ms;
+}
+
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 45rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	background: linear-gradient(to bottom, #3b9de2, #a9e8f0);
+	margin-top: 4rem;
+
+	.modal {
+		opacity: 0;
+		background-color: white;
+		box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
+		width: 19rem;
+		height: 13rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -190%);
+		transition: all 300ms;
+
+		.modal_header {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 30%;
+			background-color: red;
+
+			.modal_error {
+				font-size: 1.5rem;
+				font-weight: bold;
+				color: white;
+				width: 79%;
+				margin-left: 1.5rem;
+			}
+
+			.xi-close-min {
+				font-size: 2rem;
+			}
+
+			.xi-close-min:hover {
+				cursor: pointer;
+			}
+		}
+
+		.modal_content {
+			padding: 1rem;
+			box-sizing: border-box;
+			width: 100%;
+			height: 40%;
+			border-bottom: 0.1rem solid lightpink;
+			color: red;
+		}
+
+		.modal_footer {
+			position: relative;
+
+			img {
+				position: absolute;
+				width: 11rem;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, 10%);
+			}
+		}
+	}
+
+	.modal.active {
+		opacity: 1;
+		transform: translate(-50%, -170%);
+		z-index: 1000;
+	}
+
+
+	#header {
+		width: 100%;
+		height: 5rem;
+		background-color: transparent;
+		display: flex;
+
+		img {
+			position: absolute;
+			top: 1.8rem;
+			width: 11rem;
+			background-color: transparent;
+			z-index: 1000;
+		}
+
+		img:hover {
+			cursor: pointer;
+		}
+
+		h1 {
+			line-height: 4.5rem;
+			position: absolute;
+			background-color: transparent;
+			font-size: 3rem;
+			text-align: center;
+			width: 100%;
+		}
+
+
+	}
+
+	#main {
+		position: relative;
+		width: 100%;
+		display: flex;
+		margin-top: 2rem;
+
+		.content {
+			width: 100%;
+
+			.content1 {
+				.current_status {
+					margin: 0 auto;
+					display: flex;
+
+					span:first-child {
+						color: rgb(55, 55, 200);
+						font-weight: bold;
+						font-size: 1.6rem;
+						padding: 0.3rem;
+					}
+
+					span.comment {
+						width: 28rem;
+						font-size: 1.3rem;
+						font-weight: bold;
+						text-align: center;
+						line-height: 2.3rem;
+						margin-left: 1rem;
+						color: rgb(55, 55, 200);
+					}
+
+					.status_light {
+						transform: translate(0.3rem, 0.7rem);
+						width: 1.5rem;
+						height: 1.5rem;
+						background-color: white;
+						border-radius: 50%;
+					}
+				}
+			}
+
+			.content2 {
+				background-color: transparent;
+
+				.input_data {
+					margin: 2rem 0;
+					position: relative;
+
+					input {
+						position: absolute;
+						top: 0.5rem;
+						left: 15rem;
+						font-size: 1.5rem;
+						background-color: white;
+					}
+				}
+
+				.input_data:first-child {
+					margin-top: 1rem;
+				}
+
+				label {
+					width: 13rem;
+					text-align: right;
+					display: inline-block;
+					font-weight: bold;
+					font-size: 2rem;
+				}
+
+				.comment::after {
+					position: absolute;
+					font-weight: bold;
+					top: 2.5rem;
+					left: 15rem;
+					content: "* divided by a comma";
+					opacity: 0.5;
+					font-size: 1.4rem;
+				}
+			}
+
+			.content2 .input_data {
+				background-color: transparent;
+
+				label {
+					background-color: transparent;
+				}
+			}
+
+			.readData {
+				margin-top: 23.5rem;
+				position: relative;
+			}
+
+			.readData::after {
+				content: "----------------------Data Reception Field----------------------";
+				@include afterValue;
+			}
+		}
+
+		.nav {
+			position: absolute;
+			top: 0;
+			left: 36rem;
+			width: 9rem;
+
+			button {
+				border-radius: 0.5rem;
+				background-color: white;
+				cursor: pointer;
+				width: 100%;
+				height: 4rem;
+				font-size: 1.2rem;
+				font-weight: bold;
+				margin-bottom: 1rem;
+			}
+
+			button:nth-child(1) {
+				background-color: lightcyan;
+			}
+
+
+			button:nth-child(2) {
+				background-color: lightgreen;
+				margin-top: 2rem;
+				height: 6rem;
+			}
+
+			button:nth-child(3) {
+				background-color: lightgreen;
+				height: 6rem;
+				margin-bottom: 23.5rem;
+			}
+
+			button:nth-child(4) {
+				background-color: #F9E79F;
+				height: 9rem;
+			}
+
+
+
+			button:active {
+				background-color: rgb(158, 158, 158);
+			}
+
+		}
+
+		.nav2 {
+			display: flex;
+			position: absolute;
+			top: 30em;
+			left: 0rem;
+			width: 100%;
+			justify-content: space-evenly;
+
+			button {
+				background-color: white;
+				cursor: pointer;
+				width: 9rem;
+				height: 9rem;
+				font-size: 1.2rem;
+				font-weight: bold;
+				margin-bottom: 1rem;
+				border-radius: 1rem;
+			}
+
+			button:nth-child(1) {
+				background-color: blue;
+				color: white;
+				font-size: 2rem;
+			}
+
+			button:nth-child(2) {
+				background-color: red;
+				color: white;
+				font-size: 2rem;
+			}
+
+			button:nth-child(3) {
+				background-color: orange;
+				font-size: 1.5rem;
+				color: red;
+				margin-bottom: 2rem;
+			}
+
+
+			button:active {
+				background-color: rgb(158, 158, 158);
+			}
+
+		}
+
+		.nav2::after {
+			content: "--------------------------Button Panel--------------------------";
+			@include afterValue;
+		}
+
+	}
+
+	#footer {
+		width: 100%;
+		height: 20rem;
+		padding: 1rem;
+		box-sizing: border-box;
+
+		p {
+			text-align: center;
+			font-weight: bold;
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
+
+		.live_data_box {
+			overflow: scroll;
+			font-size: 1.2rem;
+			width: 100%;
+			height: 15rem;
+			background-color: white;
+			padding: 1rem;
+			box-sizing: border-box;
+			border-radius: 0.7rem;
+		}
+	}
+}

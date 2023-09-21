@@ -1,0 +1,8 @@
+2023-08-16 13:11:38.677 [info] update#setState idle
+2023-08-16 13:11:53.957 [error] update#isLatestVersion(): failed to check for updates
+2023-08-16 13:11:53.957 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49312)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2023-08-16 13:11:58.488 [info] Extension host with pid 814 exited with code: 0, signal: unknown.
+2023-08-16 13:11:58.492 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2023-08-16 13:11:58.493 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 775]: crashed with code 15 and reason 'killed'

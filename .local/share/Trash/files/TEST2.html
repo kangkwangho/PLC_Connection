@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>result number</p>
+    <p id="result"></p>
+    <script>
+        let param = new URLSearchParams(window.location.search);
+        const result_num = param.get("result");
+        $('#result').html(result_num);
+    </script>
+</body>
+</html>

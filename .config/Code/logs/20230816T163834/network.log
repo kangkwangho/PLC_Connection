@@ -1,0 +1,13 @@
+2023-08-16 16:38:39.461 [error] electron #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_NAME_NOT_RESOLVED
+2023-08-16 16:38:39.581 [error] electron #2: https://update.code.visualstudio.com/api/update/linux-x64/stable/6445d93c81ebe42c4cbd7a60712e0b17d9463e97 - error undefined net::ERR_NAME_NOT_RESOLVED
+2023-08-16 16:38:40.117 [error] browser #1: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed
+2023-08-16 16:38:40.142 [error] browser #2: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed
+2023-08-16 16:38:41.593 [error] electron #3: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
+2023-08-16 16:38:41.803 [error] browser #3: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed
+2023-08-16 16:39:04.493 [error] electron #4: https://update.code.visualstudio.com/api/update/linux-x64/stable/6445d93c81ebe42c4cbd7a60712e0b17d9463e97 - error undefined net::ERR_NAME_NOT_RESOLVED
+2023-08-16 16:40:14.949 [error] electron #5: https://update.code.visualstudio.com/api/update/linux-x64/stable/6445d93c81ebe42c4cbd7a60712e0b17d9463e97 - error undefined net::ERR_NAME_NOT_RESOLVED
+2023-08-16 16:40:15.393 [error] browser #1: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed
+2023-08-16 16:40:17.317 [error] browser #2: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed
+2023-08-16 16:41:05.566 [error] electron #6: https://update.code.visualstudio.com/api/update/linux-x64/stable/6445d93c81ebe42c4cbd7a60712e0b17d9463e97 - error undefined net::ERR_NAME_NOT_RESOLVED
+2023-08-16 16:41:06.066 [error] browser #1: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed
+2023-08-16 16:41:07.926 [error] browser #2: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed

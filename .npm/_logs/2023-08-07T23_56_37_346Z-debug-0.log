@@ -1,0 +1,33 @@
+0 verbose cli /opt/nodejs/node-v20.5.0-linux-x64/bin/node /opt/nodejs/node/bin/npm
+1 info using npm@9.8.0
+2 info using node@v20.5.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/opt/nodejs/node-v20.5.0-linux-x64/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 0ms
+10 timing config:load:file:/home/kangbus0109/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/opt/nodejs/node-v20.5.0-linux-x64/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 4ms
+16 timing npm:load:configload Completed in 4ms
+17 timing config:load:flatten Completed in 1ms
+18 timing npm:load:mkdirpcache Completed in 2ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm bin
+21 verbose argv "bin" "--global"
+22 timing npm:load:setTitle Completed in 0ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/home/kangbus0109/.npm/_logs/2023-08-07T23_56_37_346Z-
+25 verbose logfile /home/kangbus0109/.npm/_logs/2023-08-07T23_56_37_346Z-debug-0.log
+26 timing npm:load:logFile Completed in 4ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 21ms
+30 verbose exit 1
+31 timing npm Completed in 37ms
+32 verbose code 1

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDS TEST</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #wrap {
+            width: 10rem;
+            height: 5rem;
+            background-color: rgb(76, 50, 16);
+            display: flex;
+        }
+
+        .input_text {
+            width: 5rem;
+            height: 2rem;
+        }
+
+        .button_1 {
+            width: 4rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <input type="text" class="input_text">
+        <button class="button_1"></button>
+    </div>
+    <script>
+        let websocketUrl = "ws://192.168.0.5:8080/ws"; 
+
+        let websocket = new WebSocket(websocketUrl);
+
+        websocket.onopen = () => {
+            console.log("WebSocket connected.");
+        };
+
+        websocket.onmessage = (event) => {
+            let data = JSON.parse(event.data);
+            console.log("Received data from server:", data);
+
+        };
+
+        websocket.onclose = () => {
+            console.log("WebSocket connection closed.");
+        };
+
+        websocket.onerror = (error) => {
+            console.error("WebSocket error:", error);
+        };
+
+        document.querySelector('.button_1').addEventListener("click", () => {
+            if (websocket.readyState === WebSocket.OPEN) {
+                let textContent = document.querySelector('.input_text').value;
+                let dataToSend = {
+                    "code": 200,
+                    "content": textContent
+                };
+                websocket.send(JSON.stringify(dataToSend));
+            } else {
+                console.log("WebSocket is not in OPEN state.");
+            }
+        });
+
+    </script>
+</body>
+</html>

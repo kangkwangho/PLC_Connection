@@ -1,0 +1,94 @@
+@media all and (max-width: 375px) {
+  #wrap {
+    padding: unset;
+    width: 100%;
+    margin: unset;
+    border-radius: unset;
+    height: 100vh;
+    overflow: hidden;
+  }
+  #wrap #header h1 {
+    margin-top: 3rem;
+  }
+  #wrap #header img {
+    left: calc(50% - 5.5rem);
+    top: 0.5rem;
+  }
+  #wrap #main .nav {
+    width: 100%;
+    left: 0;
+    top: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #wrap #main .nav button {
+    width: 9rem;
+    margin: 0rem;
+  }
+  #wrap #main .nav button:nth-child(1) {
+    height: 6rem;
+    margin: 0rem;
+  }
+  #wrap #main .nav button:nth-child(2) {
+    height: 6rem;
+    margin: 0rem;
+    font-size: 1.7rem;
+  }
+  #wrap #main .nav button:nth-child(3) {
+    height: 6rem;
+    margin: 0rem;
+    font-size: 1.7rem;
+  }
+  #wrap #main .nav button:nth-child(4) {
+    height: 6rem;
+    margin: 0rem;
+  }
+  #wrap #main .nav2 button {
+    width: 33.333%;
+    height: 5rem;
+  }
+  #wrap #main .nav2::after {
+    display: none;
+  }
+  #wrap #main .nav2 {
+    top: 25.5rem;
+  }
+  #wrap #main .content .readData {
+    top: -0.5rem;
+    margin-top: 20.5rem;
+  }
+  #wrap #main .content .readData::after {
+    color: red;
+    font-size: 2rem;
+    content: "Data Reception Field";
+  }
+  #wrap #main .content .content2 .input_data {
+    margin: unset;
+    margin-bottom: 0.3rem;
+  }
+  #wrap #footer {
+    height: unset;
+    position: relative;
+  }
+  #wrap #footer p {
+    display: none;
+  }
+  #wrap #footer .live_data_box::after {
+    color: red;
+    width: 100%;
+    text-align: center;
+    top: 1.5rem;
+    left: 0;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    content: "Data Received in Real-Time";
+  }
+  #wrap #footer .live_data_box {
+    margin-top: 4rem;
+    height: 10rem;
+  }
+}
+
+/*# sourceMappingURL=PLCMedia.css.map */

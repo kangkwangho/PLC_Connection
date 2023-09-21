@@ -1,0 +1,15 @@
+2023-08-16 16:38:39.526 [info] Extension host with pid 794 started
+2023-08-16 16:38:39.556 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-08-16 16:38:39.558 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+2023-08-16 16:38:39.610 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-08-16 16:38:39.627 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-08-16 16:38:39.665 [info] Eager extensions activated
+2023-08-16 16:38:39.680 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 16:38:39.682 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-08-16 16:38:39.794 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-08-16 16:38:39.817 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2023-08-16 16:38:40.611 [error] Error: ENOENT: no such file or directory, open '/home/kangbus0109/.config/Code/User/globalStorage/vscodevim.vim/.registers'
+2023-08-16 16:38:54.180 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-08-16 16:40:20.771 [info] Extension host terminating: renderer closed the MessagePort
+2023-08-16 16:40:20.780 [error] Error: ENOENT: no such file or directory, open '/home/kangbus0109/.config/Code/User/globalStorage/vscodevim.vim/.registers'
+2023-08-16 16:40:20.780 [info] Extension host with pid 794 exiting with code 0

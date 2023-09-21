@@ -1,0 +1,16 @@
+# Installation
+> `npm install --save @types/is-regex`
+
+# Summary
+This package contains type definitions for is-regex (https://github.com/ljharb/is-regex).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/is-regex.
+
+### Additional Details
+ * Last updated: Wed, 10 Jun 2020 15:40:55 GMT
+ * Dependencies: none
+ * Global values: none
+
+# Credits
+These definitions were written by [Jordan Harband](https://github.com/ljharb), and [ExE Boss](https://github.com/ExE-Boss).
