@@ -1,4 +1,4 @@
-//http://192.168.1.99:3011 내 컴퓨터 휴대폰으로 들어가는 ip 주소
+//http://192.168.x.99:3013 내 컴퓨터 휴대폰으로 들어가는 ip 주소
 
 const ModbusRTU = require('modbus-serial');
 const express = require('express');
@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const { EventEmitter } = require('events');
 const eventEmitter = new EventEmitter();
 const app = express();
-const port = 3011;
+const port = 3013;
 app.use(express.json());
 app.locals.pretty = true;
 app.set('view engine', 'pug');
@@ -34,7 +34,7 @@ function connect_PLC(value1, value2) {
       console.log('****PLC가 연결되었습니다****');
       console.log('연결 된 IP   :' + value1);
       console.log('연결 된 PORT :' + value2);
-      console.log('----[-----------------------');
+      console.log('---------------------------');
       current_status = {
         "current": true,
         "comment": `연결에 성공하였습니다. 연결 ip : ${value1}  연결 port : ${value2}`,
